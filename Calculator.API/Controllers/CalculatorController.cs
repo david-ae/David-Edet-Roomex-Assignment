@@ -26,7 +26,7 @@ namespace Calculator.API.Controllers
                 var coordinatesA = this._mapper.Map<Coordinate>(points.CoordinateA);
                 var coordinatesB = this._mapper.Map<Coordinate>(points.CoordinateB);
 
-                var distance = this._calculator.Calculate(coordinatesA, coordinatesB, points.UnitOfMeasure);
+                var distance = this._calculator.CalculateDistance(coordinatesA, coordinatesB, points.UnitOfMeasure);
 
                 return Ok(distance);
             }

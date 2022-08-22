@@ -2,6 +2,6 @@
 {
     public interface ICalulator
     {
-        double Calculate(Coordinate coordinateA, Coordinate coordinateB, string unitOfMeasure);
+        double CalculateDistance(Coordinate coordinateA, Coordinate coordinateB, string unitOfMeasure);
     }
 }

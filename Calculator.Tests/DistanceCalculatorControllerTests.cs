@@ -17,7 +17,7 @@ namespace Calculator.Tests
             var mapper = new Mock<IMapper>();
 
             pointsDistanceCalculatorStub.Setup(service => service
-            .Calculate(It.IsAny<Coordinate>(), It.IsAny<Coordinate>(), "")).Returns(0.0);
+            .CalculateDistance(It.IsAny<Coordinate>(), It.IsAny<Coordinate>(), "")).Returns(0.0);
 
             var controller = new CalculatorController(pointsDistanceCalculatorStub.Object, mapper.Object);
 

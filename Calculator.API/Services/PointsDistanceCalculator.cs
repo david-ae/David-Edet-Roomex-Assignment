@@ -5,7 +5,7 @@ namespace Calculator.API.Services
     public class PointsDistanceCalculator : ICalulator
     {        
         private const double ONE_METER_IN_NAUTICALMILE = 0.000539957;
-        public double Calculate(Coordinate coordinateA, Coordinate coordinateB, string unitOfMeasure)
+        public double CalculateDistance(Coordinate coordinateA, Coordinate coordinateB, string unitOfMeasure)
         {
             Point pointA = GetPoint(coordinateA);
             Point pointB = GetPoint(coordinateB);
