@@ -11,7 +11,7 @@ namespace Calculator.API.Services
             Point pointB = GetPoint(coordinateB);
 
             // apply the pythagoras and ignoring that the earth is a sphere
-            // D = (difference in latitude)^2 + (difference in longitude)^2
+            // D^2 = (difference in latitude)^2 + (difference in longitude)^2
             var distance = Math.Sqrt(
                     (pointB.Latitude.GetValue() - pointA.Latitude.GetValue()) + 
                     (pointB.Longitude.GetValue() - pointA.Longitude.GetValue())
