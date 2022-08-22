@@ -1,7 +1,7 @@
 # Calculator
 
 ## Assumptions
-I chose to ignore sphericity of the earth and applied Pythagoras to get the distance between two points
+I chose to ignore sphericity of the earth and applied Pythagoras to get the distance between two points.<br/>
 I structure the application, though small, following some Domain Driven Design patterns.
 
 ## Additional Packages
